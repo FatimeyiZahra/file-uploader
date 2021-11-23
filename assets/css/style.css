@@ -1,0 +1,40 @@
+
+.file-manager-application .content-area-wrapper .file-manager-main-content .file-manager-content-body .view-container .file-manager-item .file-img-wrapper {
+	padding: 1rem;
+	background-color: #f8f8f8;
+ }
+ 
+.dropdown-menu {
+	position: absolute;
+	z-index: 1000;
+	display: none;
+	right: -7px;
+	min-width: 10rem;
+	padding: 0.5rem 0;
+	margin: 0;
+	font-size: 1rem;
+	color: #6e6b7b;
+	text-align: left;
+	list-style: none;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid rgba(34, 41, 47, 0.05);
+	border-radius: 0.357rem; 
+}
+.upload-file.show-form{
+	display: block;
+	flex-direction: row;
+    flex: 0 0 100%;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 0.75rem;
+    margin-right: 0;
+}
+
+.upload-file {
+	display: none; 
+}
+.all-btn{
+	display: flex;
+    justify-content: space-between;
+}
