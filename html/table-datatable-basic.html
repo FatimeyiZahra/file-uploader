@@ -9,13 +9,18 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Blog List - Vuexy - Bootstrap HTML admin template</title>
+    <title>DataTables - Vuexy - Bootstrap HTML admin template</title>
     <link rel="apple-touch-icon" href="../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/responsive.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/buttons.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap5.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -29,7 +34,6 @@
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/page-blog.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -41,7 +45,7 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern content-detached-right-sidebar navbar-floating footer-static   menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="content-detached-right-sidebar">
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static   menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="">
 
     <!-- BEGIN: Header-->
     <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
@@ -391,7 +395,7 @@
                         </li>
                         <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Blog">Blog</span></a>
                             <ul class="menu-content">
-                                <li  class="active"><a class="d-flex align-items-center" href="page-blog-list.html"><span class="menu-item text-truncate" data-i18n="List">List</span></a>
+                                <li><a class="d-flex align-items-center" href="page-blog-list.html"><span class="menu-item text-truncate" data-i18n="List">List</span></a>
                                 </li>
                                 <li><a class="d-flex align-items-center" href="blog-detail.html"><span class="menu-item text-truncate" data-i18n="Detail">Detail</span></a>
                                 </li>
@@ -401,7 +405,7 @@
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="grid"></i><span class="menu-title text-truncate" data-i18n="Datatable">Datatable</span></a>
                     <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="table-datatable-basic.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Basic">Basic</span></a>
+                        <li class="active"><a class="d-flex align-items-center" href="table-datatable-basic.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Basic">Basic</span></a>
                         </li>
                         <li><a class="d-flex align-items-center" href="table-datatable-advanced.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Advanced">Advanced</span></a>
                         </li>
@@ -422,16 +426,14 @@
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-start mb-0">Blog List</h2>
+                            <h2 class="content-header-title float-start mb-0">DataTables</h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="#">Pages</a>
+                                    <li class="breadcrumb-item"><a href="#">Datatable</a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="#">Blog</a>
-                                    </li>
-                                    <li class="breadcrumb-item active">List
+                                    <li class="breadcrumb-item active">Basic
                                     </li>
                                 </ol>
                             </div>
@@ -447,441 +449,181 @@
                     </div>
                 </div>
             </div>
-            <div class="content-detached content-left">
-                <div class="content-body">
-                    <!-- Blog List -->
-                    <div class="blog-list-wrapper">
-                        <!-- Blog List Items -->
-                        <div class="row">
-                            <div class="col-md-6 col-12">
-                                <div class="card">
-                                    <a href="page-blog-detail.html">
-                                        <img class="card-img-top img-fluid" src="../app-assets/images/slider/02.jpg" alt="Blog Post pic" />
-                                    </a>
-                                    <div class="card-body">
-                                        <h4 class="card-title">
-                                            <a href="page-blog-detail.html" class="blog-title-truncate text-body-heading">The Best Features Coming to iOS and Web design</a>
-                                        </h4>
-                                        <div class="d-flex">
-                                            <div class="avatar me-50">
-                                                <img src="../app-assets/images/portrait/small/avatar-s-7.jpg" alt="Avatar" width="24" height="24" />
-                                            </div>
-                                            <div class="author-info">
-                                                <small class="text-muted me-25">by</small>
-                                                <small><a href="#" class="text-body">Ghani Pradita</a></small>
-                                                <span class="text-muted ms-50 me-25">|</span>
-                                                <small class="text-muted">Jan 10, 2020</small>
-                                            </div>
-                                        </div>
-                                        <div class="my-1 py-25">
-                                            <a href="#">
-                                                <span class="badge rounded-pill badge-light-info me-50">Quote</span>
-                                            </a>
-                                            <a href="#">
-                                                <span class="badge rounded-pill badge-light-primary">Fashion</span>
-                                            </a>
-                                        </div>
-                                        <p class="card-text blog-content-truncate">
-                                            Donut fruitcake soufflé apple pie candy canes jujubes croissant chocolate bar ice cream.
-                                        </p>
-                                        <hr />
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="page-blog-detail.html#blogComment">
-                                                <div class="d-flex align-items-center">
-                                                    <i data-feather="message-square" class="font-medium-1 text-body me-50"></i>
-                                                    <span class="text-body fw-bold">76 Comments</span>
-                                                </div>
-                                            </a>
-                                            <a href="page-blog-detail.html" class="fw-bold">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-12">
-                                <div class="card">
-                                    <a href="page-blog-detail.html">
-                                        <img class="card-img-top img-fluid" src="../app-assets/images/slider/06.jpg" alt="Blog Post pic" />
-                                    </a>
-                                    <div class="card-body">
-                                        <h4 class="card-title">
-                                            <a href="page-blog-detail.html" class="blog-title-truncate text-body-heading">Latest Quirky Opening Sentence or Paragraph</a>
-                                        </h4>
-                                        <div class="d-flex">
-                                            <div class="avatar me-50">
-                                                <img src="../app-assets/images/portrait/small/avatar-s-9.jpg" alt="Avatar" width="24" height="24" />
-                                            </div>
-                                            <div class="author-info">
-                                                <small class="text-muted me-25">by</small>
-                                                <small><a href="#" class="text-body">Jorge Griffin</a></small>
-                                                <span class="text-muted ms-50 me-25">|</span>
-                                                <small class="text-muted">Jan 10, 2020</small>
-                                            </div>
-                                        </div>
-                                        <div class="my-1 py-25">
-                                            <a href="#">
-                                                <span class="badge rounded-pill badge-light-danger me-50">Gaming</span>
-                                            </a>
-                                            <a href="#">
-                                                <span class="badge rounded-pill badge-light-warning">Video</span>
-                                            </a>
-                                        </div>
-                                        <p class="card-text blog-content-truncate">
-                                            Apple pie caramels lemon drops halvah liquorice carrot cake. Tiramisu brownie lemon drops.
-                                        </p>
-                                        <hr />
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="page-blog-detail.html#blogComment">
-                                                <div class="d-flex align-items-center">
-                                                    <i data-feather="message-square" class="font-medium-1 text-body me-50"></i>
-                                                    <span class="text-body fw-bold">2.1k Comments</span>
-                                                </div>
-                                            </a>
-                                            <a href="page-blog-detail.html" class="fw-bold">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-12">
-                                <div class="card">
-                                    <a href="page-blog-detail.html">
-                                        <img class="card-img-top img-fluid" src="../app-assets/images/slider/04.jpg" alt="Blog Post pic" />
-                                    </a>
-                                    <div class="card-body">
-                                        <h4 class="card-title">
-                                            <a href="page-blog-detail.html" class="blog-title-truncate text-body-heading">Share an Amazing and Shocking Fact or Statistic</a>
-                                        </h4>
-                                        <div class="d-flex">
-                                            <div class="avatar me-50">
-                                                <img src="../app-assets/images/portrait/small/avatar-s-3.jpg" alt="Avatar" width="24" height="24" />
-                                            </div>
-                                            <div class="author-info">
-                                                <small class="text-muted me-25">by</small>
-                                                <small><a href="#" class="text-body">Claudia Neal</a></small>
-                                                <span class="text-muted ms-50 me-25">|</span>
-                                                <small class="text-muted">Jan 10, 2020</small>
-                                            </div>
-                                        </div>
-                                        <div class="my-1 py-25">
-                                            <a href="#">
-                                                <span class="badge rounded-pill badge-light-danger me-50">Gaming</span>
-                                            </a>
-                                            <a href="#">
-                                                <span class="badge rounded-pill badge-light-success">Food</span>
-                                            </a>
-                                        </div>
-                                        <p class="card-text blog-content-truncate">
-                                            Tiramisu jelly-o chupa chups tootsie roll donut wafer marshmallow cheesecake topping.
-                                        </p>
-                                        <hr />
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="page-blog-detail.html#blogComment">
-                                                <div class="d-flex align-items-center">
-                                                    <i data-feather="message-square" class="font-medium-1 text-body me-50"></i>
-                                                    <span class="text-body fw-bold">243 Comments</span>
-                                                </div>
-                                            </a>
-                                            <a href="page-blog-detail.html" class="fw-bold">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-12">
-                                <div class="card">
-                                    <a href="page-blog-detail.html">
-                                        <img class="card-img-top img-fluid" src="../app-assets/images/slider/03.jpg" alt="Blog Post pic" />
-                                    </a>
-                                    <div class="card-body">
-                                        <h4 class="card-title">
-                                            <a href="page-blog-detail.html" class="blog-title-truncate text-body-heading">Withhold a Compelling Piece of Information</a>
-                                        </h4>
-                                        <div class="d-flex">
-                                            <div class="avatar me-50">
-                                                <img src="../app-assets/images/portrait/small/avatar-s-14.jpg" alt="Avatar" width="24" height="24" />
-                                            </div>
-                                            <div class="author-info">
-                                                <small class="text-muted me-25">by</small>
-                                                <small><a href="#" class="text-body">Fred Boone</a></small>
-                                                <span class="text-muted ms-50 me-25">|</span>
-                                                <small class="text-muted">Jan 10, 2020</small>
-                                            </div>
-                                        </div>
-                                        <div class="my-1 py-25">
-                                            <a href="#">
-                                                <span class="badge rounded-pill badge-light-warning">Video</span>
-                                            </a>
-                                        </div>
-                                        <p class="card-text blog-content-truncate">
-                                            Croissant apple pie lollipop gingerbread. Cookie jujubes chocolate cake icing cheesecake.
-                                        </p>
-                                        <hr />
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="page-blog-detail.html#blogComment">
-                                                <div class="d-flex align-items-center">
-                                                    <i data-feather="message-square" class="font-medium-1 text-body me-50"></i>
-                                                    <span class="text-body fw-bold">10 Comments</span>
-                                                </div>
-                                            </a>
-                                            <a href="page-blog-detail.html" class="fw-bold">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-12">
-                                <div class="card">
-                                    <a href="page-blog-detail.html">
-                                        <img class="card-img-top img-fluid" src="../app-assets/images/slider/09.jpg" alt="Blog Post pic" />
-                                    </a>
-                                    <div class="card-body">
-                                        <h4 class="card-title">
-                                            <a href="page-blog-detail.html" class="blog-title-truncate text-body-heading">Unadvertised Bonus Opening: Share a Quote</a>
-                                        </h4>
-                                        <div class="d-flex">
-                                            <div class="avatar me-50">
-                                                <img src="../app-assets/images/portrait/small/avatar-s-13.jpg" alt="Avatar" width="24" height="24" />
-                                            </div>
-                                            <div class="author-info">
-                                                <small class="text-muted me-25">by</small>
-                                                <small><a href="#" class="text-body">Billy French</a></small>
-                                                <span class="text-muted ms-50 me-25">|</span>
-                                                <small class="text-muted">Jan 10, 2020</small>
-                                            </div>
-                                        </div>
-                                        <div class="my-1 py-25">
-                                            <a href="#">
-                                                <span class="badge rounded-pill badge-light-info me-50">Quote</span>
-                                            </a>
-                                            <a href="#">
-                                                <span class="badge rounded-pill badge-light-primary">Fashion</span>
-                                            </a>
-                                        </div>
-                                        <p class="card-text blog-content-truncate">
-                                            Muffin liquorice candy soufflé bear claw apple pie icing halvah. Pie marshmallow jelly.
-                                        </p>
-                                        <hr />
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="page-blog-detail.html#blogComment">
-                                                <div class="d-flex align-items-center">
-                                                    <i data-feather="message-square" class="font-medium-1 text-body me-50"></i>
-                                                    <span class="text-body fw-bold">319 Comments</span>
-                                                </div>
-                                            </a>
-                                            <a href="page-blog-detail.html" class="fw-bold">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-12">
-                                <div class="card">
-                                    <a href="page-blog-detail.html">
-                                        <img class="card-img-top img-fluid" src="../app-assets/images/slider/10.jpg" alt="Blog Post pic" />
-                                    </a>
-                                    <div class="card-body">
-                                        <h4 class="card-title">
-                                            <a href="page-blog-detail.html" class="blog-title-truncate text-body-heading">Ships at a distance have Every Man’s Wish on Board</a>
-                                        </h4>
-                                        <div class="d-flex">
-                                            <div class="avatar me-50">
-                                                <img src="../app-assets/images/portrait/small/avatar-s-6.jpg" alt="Avatar" width="24" height="24" />
-                                            </div>
-                                            <div class="author-info">
-                                                <small class="text-muted me-25">by</small>
-                                                <small><a href="#" class="text-body">Helena Hunt</a></small>
-                                                <span class="text-muted ms-50 me-25">|</span>
-                                                <small class="text-muted">Jan 10, 2020</small>
-                                            </div>
-                                        </div>
-                                        <div class="my-1 py-25">
-                                            <a href="#">
-                                                <span class="badge rounded-pill badge-light-primary me-50">Fashion</span>
-                                            </a>
-                                            <a href="#">
-                                                <span class="badge rounded-pill badge-light-warning">Video</span>
-                                            </a>
-                                        </div>
-                                        <p class="card-text blog-content-truncate">
-                                            A little personality goes a long way, especially on a business blog. So don’t be afraid to let loose.
-                                        </p>
-                                        <hr />
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <a href="page-blog-detail.html#blogComment">
-                                                <div class="d-flex align-items-center">
-                                                    <i data-feather="message-square" class="font-medium-1 text-body me-50"></i>
-                                                    <span class="text-body fw-bold">1.5k Comments</span>
-                                                </div>
-                                            </a>
-                                            <a href="page-blog-detail.html" class="fw-bold">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ Blog List Items -->
-
-                        <!-- Pagination -->
-                        <div class="row">
-                            <div class="col-12">
-                                <nav aria-label="Page navigation">
-                                    <ul class="pagination justify-content-center mt-2">
-                                        <li class="page-item prev-item"><a class="page-link" href="#"></a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item active" aria-current="page"><a class="page-link" href="#">4</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">5</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">7</a></li>
-                                        <li class="page-item next-item"><a class="page-link" href="#"></a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <!--/ Pagination -->
+            <div class="content-body">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Read full documnetation <a href="https://datatables.net/" target="_blank">here</a></p>
                     </div>
-                    <!--/ Blog List -->
-
                 </div>
-            </div>
-            <div class="sidebar-detached sidebar-right">
-                <div class="sidebar">
-                    <div class="blog-sidebar my-2 my-lg-0">
-                        <!-- Search bar -->
-                        <div class="blog-search">
-                            <div class="input-group input-group-merge">
-                                <input type="text" class="form-control" placeholder="Search here" />
-                                <span class="input-group-text cursor-pointer">
-                                    <i data-feather="search"></i>
-                                </span>
+                <!-- Basic table -->
+                <section id="basic-datatable">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <table class="datatables-basic table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th>id</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Date</th>
+                                            <th>Salary</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                </table>
                             </div>
                         </div>
-                        <!--/ Search bar -->
-
-                        <!-- Recent Posts -->
-                        <div class="blog-recent-posts mt-3">
-                            <h6 class="section-label">Recent Posts</h6>
-                            <div class="mt-75">
-                                <div class="d-flex mb-2">
-                                    <a href="page-blog-detail.html" class="me-2">
-                                        <img class="rounded" src="../app-assets/images/banner/banner-22.jpg" width="100" height="70" alt="Recent Post Pic" />
-                                    </a>
-                                    <div class="blog-info">
-                                        <h6 class="blog-recent-post-title">
-                                            <a href="page-blog-detail.html" class="text-body-heading">Why Should Forget Facebook?</a>
-                                        </h6>
-                                        <div class="text-muted mb-0">Jan 14 2020</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex mb-2">
-                                    <a href="page-blog-detail.html" class="me-2">
-                                        <img class="rounded" src="../app-assets/images/banner/banner-27.jpg" width="100" height="70" alt="Recent Post Pic" />
-                                    </a>
-                                    <div class="blog-info">
-                                        <h6 class="blog-recent-post-title">
-                                            <a href="page-blog-detail.html" class="text-body-heading">Publish your passions, your way</a>
-                                        </h6>
-                                        <div class="text-muted mb-0">Mar 04 2020</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex mb-2">
-                                    <a href="page-blog-detail.html" class="me-2">
-                                        <img class="rounded" src="../app-assets/images/banner/banner-39.jpg" width="100" height="70" alt="Recent Post Pic" />
-                                    </a>
-                                    <div class="blog-info">
-                                        <h6 class="blog-recent-post-title">
-                                            <a href="page-blog-detail.html" class="text-body-heading">The Best Ways to Retain More</a>
-                                        </h6>
-                                        <div class="text-muted mb-0">Feb 18 2020</div>
-                                    </div>
-                                </div>
-                                <div class="d-flex">
-                                    <a href="page-blog-detail.html" class="me-2">
-                                        <img class="rounded" src="../app-assets/images/banner/banner-35.jpg" width="100" height="70" alt="Recent Post Pic" />
-                                    </a>
-                                    <div class="blog-info">
-                                        <h6 class="blog-recent-post-title">
-                                            <a href="page-blog-detail.html" class="text-body-heading">Share a Shocking Fact or Statistic</a>
-                                        </h6>
-                                        <div class="text-muted mb-0">Oct 08 2020</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ Recent Posts -->
-
-                        <!-- Categories -->
-                        <div class="blog-categories mt-3">
-                            <h6 class="section-label">Categories</h6>
-                            <div class="mt-1">
-                                <div class="d-flex justify-content-start align-items-center mb-75">
-                                    <a href="#" class="me-75">
-                                        <div class="avatar bg-light-primary rounded">
-                                            <div class="avatar-content">
-                                                <i data-feather="watch" class="avatar-icon font-medium-1"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="blog-category-title text-body">Fashion</div>
-                                    </a>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-center mb-75">
-                                    <a href="#" class="me-75">
-                                        <div class="avatar bg-light-success rounded">
-                                            <div class="avatar-content">
-                                                <i data-feather="shopping-cart" class="avatar-icon font-medium-1"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="blog-category-title text-body">Food</div>
-                                    </a>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-center mb-75">
-                                    <a href="#" class="me-75">
-                                        <div class="avatar bg-light-danger rounded">
-                                            <div class="avatar-content">
-                                                <i data-feather="command" class="avatar-icon font-medium-1"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="blog-category-title text-body">Gaming</div>
-                                    </a>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-center mb-75">
-                                    <a href="#" class="me-75">
-                                        <div class="avatar bg-light-info rounded">
-                                            <div class="avatar-content">
-                                                <i data-feather="hash" class="avatar-icon font-medium-1"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="blog-category-title text-body">Quote</div>
-                                    </a>
-                                </div>
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <a href="#" class="me-75">
-                                        <div class="avatar bg-light-warning rounded">
-                                            <div class="avatar-content">
-                                                <i data-feather="video" class="avatar-icon font-medium-1"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#">
-                                        <div class="blog-category-title text-body">Video</div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ Categories -->
                     </div>
+                    <!-- Modal to add new record -->
+                    <div class="modal modal-slide-in fade" id="modals-slide-in">
+                        <div class="modal-dialog sidebar-sm">
+                            <form class="add-new-record modal-content pt-0">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+                                <div class="modal-header mb-1">
+                                    <h5 class="modal-title" id="exampleModalLabel">New Record</h5>
+                                </div>
+                                <div class="modal-body flex-grow-1">
+                                    <div class="mb-1">
+                                        <label class="form-label" for="basic-icon-default-fullname">Full Name</label>
+                                        <input type="text" class="form-control dt-full-name" id="basic-icon-default-fullname" placeholder="John Doe" aria-label="John Doe" />
+                                    </div>
+                                    <div class="mb-1">
+                                        <label class="form-label" for="basic-icon-default-post">Post</label>
+                                        <input type="text" id="basic-icon-default-post" class="form-control dt-post" placeholder="Web Developer" aria-label="Web Developer" />
+                                    </div>
+                                    <div class="mb-1">
+                                        <label class="form-label" for="basic-icon-default-email">Email</label>
+                                        <input type="text" id="basic-icon-default-email" class="form-control dt-email" placeholder="john.doe@example.com" aria-label="john.doe@example.com" />
+                                        <small class="form-text"> You can use letters, numbers & periods </small>
+                                    </div>
+                                    <div class="mb-1">
+                                        <label class="form-label" for="basic-icon-default-date">Joining Date</label>
+                                        <input type="text" class="form-control dt-date" id="basic-icon-default-date" placeholder="MM/DD/YYYY" aria-label="MM/DD/YYYY" />
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="form-label" for="basic-icon-default-salary">Salary</label>
+                                        <input type="text" id="basic-icon-default-salary" class="form-control dt-salary" placeholder="$12000" aria-label="$12000" />
+                                    </div>
+                                    <button type="button" class="btn btn-primary data-submit me-1">Submit</button>
+                                    <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <!--/ Basic table -->
 
-                </div>
+                <!-- Complex Headers -->
+                <section id="complex-header-datatable">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header border-bottom">
+                                    <h4 class="card-title">Complex Headers</h4>
+                                </div>
+                                <div class="card-datatable">
+                                    <table class="dt-complex-header table table-bordered table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th rowspan="2">Name</th>
+                                                <th colspan="2">Contact</th>
+                                                <th colspan="3">HR Information</th>
+                                                <th rowspan="2">Action</th>
+                                            </tr>
+                                            <tr>
+                                                <th>E-mail</th>
+                                                <th>City</th>
+                                                <th>Position</th>
+                                                <th>Salary</th>
+                                                <th class="cell-fit">Status</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/ Complex Headers -->
+
+                <!-- Row grouping -->
+                <section id="row-grouping-datatable">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header border-bottom">
+                                    <h4 class="card-title">Row Grouping</h4>
+                                </div>
+                                <div class="card-datatable">
+                                    <table class="dt-row-grouping table">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Email</th>
+                                                <th>City</th>
+                                                <th>Date</th>
+                                                <th>Salary</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th></th>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Email</th>
+                                                <th>City</th>
+                                                <th>Date</th>
+                                                <th>Salary</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/ Row grouping -->
+
+                <!-- Multilingual -->
+                <section id="multilingual-datatable">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header border-bottom">
+                                    <h4 class="card-title">Multilingual</h4>
+                                </div>
+                                <div class="card-datatable">
+                                    <table class="dt-multilingual table">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Email</th>
+                                                <th>Date</th>
+                                                <th>Salary</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/ Multilingual -->
+
             </div>
         </div>
     </div>
@@ -903,6 +645,19 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
+    <script src="../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/dataTables.bootstrap5.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/responsive.bootstrap5.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
+    <script src="../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -911,6 +666,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
+    <script src="../app-assets/js/scripts/tables/table-datatables-basic.js"></script>
     <!-- END: Page JS-->
 
     <script>
